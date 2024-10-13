@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex &mdash; Pikachu, the Mouse Pokémon</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+
+    <!-- Prefetch -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://assets.pokemon.com" />
+  </head>
+  <body>
+    <!-- 
+    MARK: Navbar
+    -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" tabindex="-1">
+          <img
+            src="../assets/logo.png"
+            alt="Logo"
+            width="30"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <!-- 
+    MARK: Cards Grid
+    -->
+    <main class="container">
+      <h1 class="display-5 my-5">Pokedex &mdash; Pikachu, the Mouse Pokémon</h1>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </span>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInputGroup1"
+            placeholder="Pikachu"
+            autocomplete="off"
+            tabindex="1"
+          />
+          <label for="floatingInputGroup1">Search Pokemon</label>
+        </div>
+      </div>
+
+      <!-- Cards Row -->
+      <div
+        class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 mb-5"
+        data-row
+      ></div>
+    </main>
+
+    <!-- 
+    MARK: Footer
+    -->
+    <footer class="container">
+      <p>Copyrights &copy; Pokemon. All rights reserved</p>
+    </footer>
+
+    <script src="ts/main.ts" type="module"></script>
+  </body>
+</html>
