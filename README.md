@@ -1,4 +1,4 @@
-# Pokedex
+# Pokemon
 
 A webapp that renders pokemon coming from `data.json`
 
